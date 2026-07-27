@@ -1,0 +1,12 @@
+yo chat
+
+soft launch score = 92;
+soft launch verified = no cap;
+
+vibe check (score >= 90 && verified) {
+  flex "Vibe check passed. No cap.";
+} not the vibe {
+  flex "Not the vibe.";
+}
+
+aight, touch grass

@@ -1,0 +1,19 @@
+yo chat
+
+soft launch count = 0;
+
+keep cooking while (count < 10) {
+  count += 1;
+
+  vibe check (count == 2) {
+    ghosting;
+  }
+
+  flex count;
+
+  vibe check (count == 5) {
+    cooked;
+  }
+}
+
+aight, touch grass

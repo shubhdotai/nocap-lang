@@ -1,0 +1,13 @@
+yo chat
+
+soft launch rows = 5;
+soft launch row = 1;
+soft launch stars = "";
+
+keep cooking while (row <= rows) {
+  stars = stars + "*";
+  flex stars;
+  row += 1;
+}
+
+aight, touch grass

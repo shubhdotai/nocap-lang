@@ -1,0 +1,9 @@
+yo chat
+
+try this {
+  crash out "The receipts are missing.";
+} caught in 4K (error) {
+  flex "Handled:", error;
+}
+
+aight, touch grass

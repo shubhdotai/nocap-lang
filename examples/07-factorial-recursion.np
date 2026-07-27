@@ -1,0 +1,15 @@
+yo chat
+
+cook factorial(number) {
+  vibe check (number <= 1) {
+    serve 1;
+  }
+
+  serve number * factorial(number - 1);
+}
+
+soft launch number = 6;
+soft launch answer = factorial(number);
+flex "Factorial of", number, "is", answer;
+
+aight, touch grass

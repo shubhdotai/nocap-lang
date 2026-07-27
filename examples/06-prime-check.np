@@ -1,0 +1,25 @@
+yo chat
+
+soft launch number = 29;
+soft launch divisor = 2;
+soft launch isPrime = no cap;
+
+vibe check (number < 2) {
+  isPrime = delulu;
+} not the vibe {
+  keep cooking while (divisor * divisor <= number) {
+    vibe check (number % divisor == 0) {
+      isPrime = delulu;
+      cooked;
+    }
+    divisor += 1;
+  }
+}
+
+vibe check (isPrime) {
+  flex number, "is prime.";
+} not the vibe {
+  flex number, "is not prime.";
+}
+
+aight, touch grass

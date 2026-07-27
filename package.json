@@ -1,0 +1,47 @@
+{
+  "name": "nocap-lang",
+  "version": "1.2.1",
+  "description": "A small, readable Gen-Z programming language written in TypeScript.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "nocap": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc --ignoreConfig --noEmit --strict --module NodeNext --moduleResolution NodeNext --target ES2022 --types node --skipLibCheck test/*.test.ts",
+    "test": "tsx --test test/*.test.ts",
+    "check": "npm run typecheck && npm test && npm run build",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run check"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "programming-language",
+    "interpreter",
+    "typescript",
+    "gen-z",
+    "nocap"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  }
+}
