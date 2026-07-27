@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="NoCap is a tiny Gen-Z programming language that passes the vibe check."
+    />
+    <meta name="theme-color" content="#0b0d10" />
+    <meta property="og:title" content="NoCap — Code that passes the vibe check" />
+    <meta
+      property="og:description"
+      content="A tiny Gen-Z programming language written in TypeScript."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shubhdotai.github.io/nocap-lang/" />
+    <meta property="og:image" content="https://shubhdotai.github.io/nocap-lang/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NoCap — Code that passes the vibe check" />
+    <meta
+      name="twitter:description"
+      content="A tiny Gen-Z programming language written in TypeScript."
+    />
+    <meta name="twitter:image" content="https://shubhdotai.github.io/nocap-lang/og.png" />
+    <title>NoCap — Code that passes the vibe check</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-one" aria-hidden="true"></div>
+    <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="NoCap home">
+        <span class="brand-mark">NC</span>
+        <span>NoCap</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#playground">Playground</a>
+        <a href="#docs">Syntax</a>
+        <a href="https://www.npmjs.com/package/nocap-lang" target="_blank" rel="noreferrer">npm</a>
+        <a
+          class="github-link"
+          href="https://github.com/shubhdotai/nocap-lang"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-pulse"></span> v1.2.1 · live on npm</div>
+          <h1>Code that passes<br />the <span>vibe check.</span></h1>
+          <p class="hero-description">
+            A tiny, readable programming language where Gen-Z slang actually means what the code does.
+            Built in TypeScript. Zero runtime dependencies.
+          </p>
+
+          <div class="install-command" role="group" aria-label="Installation command">
+            <span class="prompt" aria-hidden="true">$</span>
+            <code>npm install --global nocap-lang</code>
+            <button class="copy-button" type="button" data-copy="npm install --global nocap-lang">
+              <span class="copy-label">Copy</span>
+            </button>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#playground">Try it live <span>↓</span></a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/shubhdotai/nocap-lang"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View source <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-code" aria-label="NoCap code example">
+          <div class="window-bar">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>main.np</span>
+            <span class="window-badge">no cap</span>
+          </div>
+          <pre><code data-highlight>yo chat
+
+soft launch mood = "locked in";
+soft launch score = 100;
+
+vibe check (score &gt;= 90) {
+  flex mood, "— absolute cinema.";
+} not the vibe {
+  flex "Time to touch grass.";
+}
+
+aight, touch grass</code></pre>
+          <div class="code-result">
+            <span>OUTPUT</span>
+            <strong>locked in — absolute cinema.</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="NoCap features">
+        <div class="marquee-track">
+          <span>READABLE BY DESIGN</span><i>✦</i>
+          <span>STRICTLY TYPE-CHECKED</span><i>✦</i>
+          <span>ZERO RUNTIME DEPS</span><i>✦</i>
+          <span>RECURSION READY</span><i>✦</i>
+          <span>ACTUALLY BUSSIN</span><i>✦</i>
+          <span>READABLE BY DESIGN</span><i>✦</i>
+          <span>STRICTLY TYPE-CHECKED</span><i>✦</i>
+        </div>
+      </section>
+
+      <section class="playground-section section-shell" id="playground">
+        <div class="section-heading">
+          <div>
+            <span class="section-number">01</span>
+            <p class="section-kicker">Playground</p>
+            <h2>Let it cook.</h2>
+          </div>
+          <p>Edit the code, hit run, and watch NoCap execute directly in your browser.</p>
+        </div>
+
+        <div class="playground-card">
+          <div class="playground-toolbar">
+            <div class="toolbar-file"><span class="file-dot"></span> playground.np</div>
+            <div class="toolbar-actions">
+              <label class="sr-only" for="example-select">Choose an example</label>
+              <select id="example-select" aria-label="Choose a code example">
+                <option value="hello">Hello, chat</option>
+                <option value="vibe">Vibe check</option>
+                <option value="stars">Star pattern</option>
+                <option value="prime">Prime check</option>
+                <option value="factorial">Recursive factorial</option>
+              </select>
+              <button class="clear-button" id="clear-button" type="button">Clear</button>
+              <button class="run-button" id="run-button" type="button">
+                <span aria-hidden="true">▶</span> Run
+              </button>
+            </div>
+          </div>
+
+          <div class="playground-grid">
+            <div class="editor-panel">
+              <div class="panel-label"><span>EDITOR</span><span id="line-count">3 lines</span></div>
+              <div class="editor-shell">
+                <pre id="editor-highlight" aria-hidden="true"><code></code></pre>
+                <textarea
+                  id="editor"
+                  aria-label="NoCap code editor"
+                  autocomplete="off"
+                  autocapitalize="off"
+                  spellcheck="false"
+                  wrap="off"
+                ></textarea>
+              </div>
+            </div>
+            <div class="output-panel">
+              <div class="panel-label">
+                <span>OUTPUT</span>
+                <span class="run-status" id="run-status"><i></i> Ready</span>
+              </div>
+              <pre id="output" aria-live="polite">Hit “Run” when the vibe feels right.</pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-section section-shell" id="docs">
+        <div class="section-heading">
+          <div>
+            <span class="section-number">02</span>
+            <p class="section-kicker">Syntax</p>
+            <h2>Read it once.<br />Get it instantly.</h2>
+          </div>
+          <p>Familiar programming ideas, expressed with slang that keeps the same semantic meaning.</p>
+        </div>
+
+        <div class="syntax-grid">
+          <article class="syntax-card accent-lime">
+            <span class="card-index">01 / GENERAL</span>
+            <dl>
+              <div><dt><code>yo chat</code></dt><dd>Start program</dd></div>
+              <div><dt><code>aight, touch grass</code></dt><dd>End program</dd></div>
+              <div><dt><code>flex value;</code></dt><dd>Print output</dd></div>
+            </dl>
+          </article>
+
+          <article class="syntax-card accent-purple">
+            <span class="card-index">02 / VALUES</span>
+            <dl>
+              <div><dt><code>soft launch x = 1;</code></dt><dd>Create variable</dd></div>
+              <div><dt><code>no cap</code></dt><dd>True</dd></div>
+              <div><dt><code>delulu</code></dt><dd>False</dd></div>
+              <div><dt><code>ghosted</code></dt><dd>Null</dd></div>
+            </dl>
+          </article>
+
+          <article class="syntax-card accent-orange">
+            <span class="card-index">03 / FLOW</span>
+            <dl>
+              <div><dt><code>vibe check (...)</code></dt><dd>If</dd></div>
+              <div><dt><code>not the vibe</code></dt><dd>Else</dd></div>
+              <div><dt><code>keep cooking while (...)</code></dt><dd>While</dd></div>
+              <div><dt><code>ghosting;</code></dt><dd>Continue</dd></div>
+              <div><dt><code>cooked;</code></dt><dd>Break</dd></div>
+            </dl>
+          </article>
+
+          <article class="syntax-card accent-blue">
+            <span class="card-index">04 / FUNCTIONS</span>
+            <dl>
+              <div><dt><code>cook name(args)</code></dt><dd>Create function</dd></div>
+              <div><dt><code>serve value;</code></dt><dd>Return value</dd></div>
+              <div><dt><code>crash out value;</code></dt><dd>Throw error</dd></div>
+              <div><dt><code>caught in 4K (error)</code></dt><dd>Catch error</dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="quick-start">
+          <div class="quick-start-copy">
+            <span class="section-number">03</span>
+            <p class="section-kicker">Quick start</p>
+            <h2>Three commands.<br />Main character energy.</h2>
+            <ol>
+              <li><span>1</span><div><strong>Install globally</strong><code>npm i -g nocap-lang</code></div></li>
+              <li><span>2</span><div><strong>Create a file</strong><code>touch main.np</code></div></li>
+              <li><span>3</span><div><strong>Run the vibe</strong><code>nocap main.np</code></div></li>
+            </ol>
+          </div>
+          <div class="quick-start-code">
+            <div class="window-bar">
+              <span>factorial.np</span>
+              <button type="button" class="mini-copy" data-copy-target="factorial-code">Copy code</button>
+            </div>
+            <pre id="factorial-code"><code data-highlight>yo chat
+
+cook factorial(number) {
+  vibe check (number &lt;= 1) {
+    serve 1;
+  }
+
+  serve number * factorial(number - 1);
+}
+
+flex factorial(6);
+
+aight, touch grass</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta section-shell">
+        <p class="section-kicker">No further questions</p>
+        <h2>Your next side project<br />just found its language.</h2>
+        <div class="hero-actions">
+          <button class="button button-primary copy-button-bottom" type="button" data-copy="npm install --global nocap-lang">
+            Copy install command
+          </button>
+          <a
+            class="button button-secondary"
+            href="https://github.com/shubhdotai/nocap-lang"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Star on GitHub <span>↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top"><span class="brand-mark">NC</span><span>NoCap</span></a>
+      <p>Built with TypeScript, taste, and absolutely no cap.</p>
+      <div><span>MIT License</span><span>·</span><span>v1.2.1</span></div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Copied. No cap.</div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
